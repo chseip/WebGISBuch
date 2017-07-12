@@ -1,0 +1,6 @@
+osmosis --read-xml file="<<Path to>>deutschland.osm"
+	--bounding-polygon file=bremen.poly
+	--tf accept-relations boundary=administrative
+	--tf accept-relations admin_level=9,10,11
+	--used-node
+	--write-xml file="<<Path to output folder>>output.osm"

@@ -1,0 +1,4 @@
+http://yourfavoritesite.com/WMS?REQUEST=GetMap
+&BBOX=7.0,52.0,15.0,60.0&
+SLD=http%3A%2F%2Fmyclientsite.com%2FmySLD.xml
+&WIDTH=400&HEIGHT=400

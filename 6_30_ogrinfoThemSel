@@ -1,0 +1,1 @@
+#> ogrinfo daten.shp seen -sql "select name from seen where sicht='klar' and flaeche > 100"

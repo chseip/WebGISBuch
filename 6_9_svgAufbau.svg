@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.0" baseProfile="full" viewbox="470000 -5870000 530000 -5930000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Kommentar in SVG -->
+  <image id="img" xlink:href="img.png"	x="480000" y="-5880000" width="10000" height="10000"/>
+  <!-- Definition eines Polygon mit path -->
+  <path id="myFirstPath" fill="lightblue" fill-rule="evenodd" 	d="M470100 -5870200 ..."/>
+  <!-- Begin einer Gruppe -->
+  <g id="g1" fill="#33FF00" stroke="red" stroke-width="200" fill-opacity="0.5" stroke-linecap="round"	stroke-linejoin="round">
+    <path d="M470150 ..."/>
+    <path d="M470160 ..."/>
+    <path d="M470170 ..."/>
+  </g>
+  <rect x="100" y="200" width="50" height="70" />
+</svg>

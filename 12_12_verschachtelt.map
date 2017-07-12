@@ -1,0 +1,19 @@
+MAP
+  NAME "Meine Karte"
+  ...
+  LAYER
+    NAME "Grosse Fluesse"
+    TYPE LINE
+    STATUS ON
+    DATA rasterdata/seen.tif
+    PROJECTION
+      "init=epsg:4326"
+    END
+    FILTER "'[LAENGE]' > 1000"
+    CLASS
+      NAME "Stroeme"
+      COLOR 0 0 255
+    END
+  END
+  ...
+END

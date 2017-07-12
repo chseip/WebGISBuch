@@ -1,0 +1,7 @@
+[out:json][timeout:25];
+(
+  relation["boundary"="administrative"]["admin_level"="9"] (52.9,8.4,53.2,9.03);
+  relation["boundary"="administrative"]["admin_level"="10"] (52.9,8.4,53.2,9.03);
+  relation["boundary"="administrative"]["admin_level"="11"] (52.9,8.4,53.2,9.03);
+);
+out geom;

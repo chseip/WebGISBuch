@@ -1,0 +1,7 @@
+<elements> 
+  <myElement attribut1="Attribut Inhalt">eins</myElement> 
+  <myElement attribut1="attributInhalt" attribut2="Attribut Inhalt">
+    zwei
+    <unterElement>irgendein Inhalt</unterElement>
+  </myElement>
+</elements>

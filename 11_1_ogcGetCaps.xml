@@ -1,0 +1,10 @@
+<Service>
+  <Name>OGC:WMS</Name>
+  <Title>Mein erster Web Map Service</Title>
+  <Abstract>Dies ist nur eine Uebung</Abstract>
+  <KeywordList/>
+  <OnlineResource xlink:href="http://localhost/ms_ogc_workshop/index.html"/>
+  <ContactInformation/>
+  <Fees>none</Fees>
+  <AccessConstraints>none</AccessConstraints>
+</Service>

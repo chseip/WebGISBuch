@@ -1,0 +1,9 @@
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<rdf:Description rdf:about="http://www.auf.uni-rostock.de">
+		<dc:title>Agrar- und Umweltwissenschaftliche Fakult&auml;t</dc:title>
+		<foaf:topic rdf:parseType="Resource">
+			<geo:lat>12.3323</geo:lat>
+			<geo:long>54.3289</geo:long>
+		</foaf:topic>
+	</rdf:Description>
+</rdf:RDF>

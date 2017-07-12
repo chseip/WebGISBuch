@@ -1,0 +1,3 @@
+> gdal_translate -of "PNG" -outsize 5% 5% germany.tif germany.png
+
+> gdal_translate -of "JPEG" -projwin 4500000 5900000 4500500 5900500 luftbildmosaik.tif kartenausschnitt.jpg

@@ -1,0 +1,1 @@
+title like '%Umwelt%' and timestamp>=DATE"2007-01-01" and intersects(GeographicBoundingBox, ENVELOPE(9,52,15,54))

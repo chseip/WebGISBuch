@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <script src="http://api.tiles.mapbox.com/mapbox.js/plugins/turf/v2.0.0/turf.min.js"></script>
+    <title>Turf and OpenLayers 3 - within()</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var searchWithin = {
+        "type": "FeatureCollection",
+        "features": [
+          {
+            "type": "Feature",
+            "geometry": {
+              "type": "Polygon",
+              "coordinates": [[[11.456747,53.516422],[11.350268545948, 53.525946819141],[11.302409,53.530228], [11.300674,53.53177],[11.300873910132, 53.579389178157],[11.301221,53.662067], [11.301862,53.662178],[11.305145,53.662407], [11.34855,53.66515],[11.360609,53.66568], [11.367164, 53.665802],[11.405409,53.652054], [11.425345,53.643635],[11.505655,53.60043] ,[11.512019,53.5927],[11.460756,53.519318], [11.456747,53.516422]]]
+            }
+          }
+        ]
+      };
+      var pt1 = turf.point([11.302409, 53.530228]);
+      var pt2 = turf.point([11.456747, 53.516422]);
+      var pt3 = turf.point([11.2, 53.5]);
+      var pt4 = turf.point([11.4, 53.6]);
+      
+      var PTfeatures = {
+        "type": "FeatureCollection",
+        "features": [pt1, pt2, pt3, pt4]
+      };
+          
+      var ptsWithin = turf.within(PTfeatures, searchWithin);
+      console.log(JSON.stringify(ptsWithin));
+    </script>
+  </body>
+</html>

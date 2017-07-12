@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:georss="http://www.georss.org/georss" xmlns:gml="http://www.orengls.net/gml">
+	<title>MV Seafinder</title>
+	<subtitle>Lakes in Mecklenburg-Western Pomerania</subtitle>
+	<link href="http://www.gdl-service.de/gmars/seenfinder.php"/>
+	<updated>2006-10-05718:30:02Z</updated>
+	<author>
+		<name>Dr. Peter Korduan</name>
+		<email>pkorduan@gmx.de</email>
+	</author>
+	<entry>
+		<title>Drewitzer See</title>
+		<link href="http://www.gdi-service.de"/>
+		<id>DrewitzerSee</id>
+		<updated>2006-10-05707:02:32Z</updated>
+		<summary>Schoener See</summary>
+		<georss:polygon>53.5705 12.3212 53.5795 12.3466 53.5583 12.3514 53.5485 12.3706 53.5272 12.3788 53.5195 12.3631 53.5623 12.3425 53.5705 12.3212 </georss:polygon>
+	</entry>
+	<entry>
+		<title>Mueritz</title>
+		<link href="http://www.gdi-service.de"/>
+		<id>Mueritz</id>
+		<updated>2006-10-05707:02:32Z</updated>
+		<summary>Groesster See Deutschlands</summary>
+		<georss:polygon>53.4259 12.5739 53.5178 12.6631 53.5093 12.6837 53.484 12.6563 53.4292 12.7757 53.3923 12.7798 53.344 12.6988 53.43 12.6205 53.4259 12.5739</georss:polygon>
+	</entry>
+</feed> 

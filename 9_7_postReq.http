@@ -1,0 +1,5 @@
+POST /messages HTTP/1.1 
+User-Agent: curl/7.39.0 
+Content-Type: application/xml 
+Content-Length: 43 
+<message><text>Nachricht A</text></message>

@@ -1,0 +1,10 @@
+<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+  <env:Header>
+    ...
+  </env:Header>
+  <env:Body>
+    <ns2:getPreis xmlns:ns2="http://artikel.demo/"> 
+      <artikelnummer>4711</artikelnummer> 
+    </ns2:getPreis> 
+  </env:Body>
+</env:Envelope>

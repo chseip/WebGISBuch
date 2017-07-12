@@ -1,0 +1,16 @@
+<Input>
+  <ows:Identifier>bboxInput</ows:Identifier>
+  <ows:Title>bounding box of dummy polygon</ows:Title>
+  <ows:Abstract>Bounding box of dummy polygon to be used</ows:Abstract>
+  <BoundingBoxData>
+    <Default>
+      <CRS>urn:ogc:def:crs:EPSG:6.6:4326</CRS>
+    </Default>
+    <Supported>
+      <CRSsType>
+        <CRS>urn:ogc:def:crs:EPSG:6.6:4326</CRS>
+        <CRS>urn:ogc:def:crs:EPSG:6.6:4979</CRS>
+      </CRSsType>
+    </Supported>
+  </BoundingBoxData>
+</Input>

@@ -1,0 +1,25 @@
+<html>
+  <head>
+  <script src="http://localhost/libs/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $.ajax({
+          type: "GET",
+          url: 'http://andererserver.de/text.json', 
+          contentType: "application/json; charset=utf-8",
+          dataType: "json",
+          crossDomain: true,
+          success: function (data) {
+            $("#div1").load(JSON.parse(data));
+          }
+        });
+      });
+    });
+  </script>
+  </head>
+  <body>
+    <div id="div1">jQuery AJAX &auml;ndert diesen Text</div>
+    <button>Hole Inhalt aus JSON-Datei</button>
+  </body>
+</html>

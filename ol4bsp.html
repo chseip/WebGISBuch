@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+		<title>Einbindung OpenLayers 3 mit einem OpenStreetMap-Layer</title>
+    <link rel="stylesheet" href="https://openlayers.org/en/v4.1.0/css/ol.css" type="text/css">
+  </head>
+  <body>
+    <div id="map" class="map" style="width: 600px; height: 300px"></div>
+		<script src="http://openlayers.org/en/v4.1.0/build/ol.js" type="text/javascript"></script>
+		<!--<script src="http://openlayers.org/en/master/build/ol.js" type="text/javascript"></script>-->
+    <script type="text/javascript">
+      var map = new ol.Map({
+        target: 'map',
+        layers: [
+          new ol.layer.Tile({
+            source: new ol.source.OSM()
+          })
+        ],
+        view: new ol.View({
+          center: ol.proj.fromLonLat([12.108811, 54.083336]),
+          zoom: 8
+        })
+      });
+    </script>
+  </body>
+</html>

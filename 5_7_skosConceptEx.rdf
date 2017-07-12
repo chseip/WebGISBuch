@@ -1,0 +1,22 @@
+﻿<rdf:RDF 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+  <skos:Concept rdf:about="http://example.net/concepts#strand">
+    <skos:prefLabel xml:lang="de">Strand</skos:prefLabel>
+    <skos:altLabel xml:lang="de">Ufer</skos:altLabel>
+    <skos:altLabel xml:lang="de">Küste</skos:altLabel>
+	<skos:prefLabel xml:lang="en">beach</skos:prefLabel>
+    <skos:altLabel xml:lang="en">shore</skos:altLabel>
+  
+    <skos:definition xml:lang="de">Ein Strand ist ein flacher Küsten- oder Uferstreifen aus Sand oder Geröll. (Wikipedia)</skos:definition>
+	<skos:definition xml:lang="en">A beach is the sand where water hits the land.</skos:definition>
+    <skos:editorialNote>Think of a better English definition.</skos:editorialNote>
+    
+    <skos:narrower rdf:resource="www.example.net/concepts#strandabbruchkante"/>
+    <skos:related rdf:resource="www.example.net/concepts#wasser"/>
+    <skos:related rdf:resource="www.example.net/concepts#sand"/>
+  </skos:Concept>
+  <skos:Concept rdf:about="www.example.net/concepts#strandabbruchkante">
+    <skos:broader rdf:resource="www.example.net/concepts#strand"/>
+  </skos:Concept>
+</rdf:RDF>

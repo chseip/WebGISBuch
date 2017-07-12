@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+  <Document>
+    <name>Meine Placemarks</name>
+    <Folder>
+      <name>Placemarks zu Hause</name>
+      <open>1</open>
+      <Placemark>
+        <name>Mein Zuhause</name>
+        <LookAt>
+          <longitude>12.12274100441965</longitude>
+          <latitude>54.08896403651492</latitude>
+          <range>323.9394114964209</range>
+          <tilt>62.04479589560767</tilt>
+          <heading>-23.6780019421634</heading>
+        </LookAt>
+        <styleUrl>root://styleMaps#default+nicon=0x307 +hicon=0x317</styleUrl>
+        <Point>
+          <coordinates>12.1231,54.0877,0</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

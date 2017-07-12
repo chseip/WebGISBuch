@@ -1,0 +1,17 @@
+<Input minOccurs="1" maxOccurs="1">
+  <ows:Identifier>inputPolygon</ows:Identifier>
+  <ows:Title>Polygon to be buffered</ows:Title>
+  <ows:Abstract>GML that describes the polygon to be buffered</ows:Abstract>
+  <ComplexData>
+    <Default>
+      <Format>
+        <MimeType>application/gml+xml</MimeType>
+        <Encoding>UTF-8</Encoding>
+        <Schema>http://schemas.opengis.net/gml/3.1.0/base/geometryBasic2d.xsd</Schema>
+      </Format>
+    </Default>
+    <Supported>
+      [...]
+    </Supported>
+  </ComplexData>
+</Input>

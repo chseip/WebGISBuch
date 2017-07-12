@@ -1,0 +1,10 @@
+<NetworkLink>
+  <name>GPS Koordinaten</name>
+  <Url>
+    <href>http://localhost/currentPosition.cgi</href>
+    <refreshMode>onInterval</refreshMode>
+    <refreshInterval>300</refreshInterval>
+    <viewRefreshMode>onStop</viewRefreshMode>
+    <viewRefreshTime>7</viewRefreshTime>
+  </Url>
+</NetworkLink>

@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Map with valid credentials</title>
+    <script type="text/javascript" src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+    <script type="text/javascript">
+    var map = null;
+    function getMap() {
+      map = new Microsoft.Maps.Map(document.getElementById('myMap'),{
+        credentials: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890'
+      });
+    }
+    </script>
+  </head>
+  <body onload="getMap();">
+    <div id='myMap' style="position:relative; width:600px; height:300px;"></div>
+  </body>
+</html>

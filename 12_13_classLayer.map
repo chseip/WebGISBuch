@@ -1,0 +1,23 @@
+LAYER
+  NAME "ClassLayer"
+  DATA "Luftbild.tif"
+  TYPE RASTER
+  STATUS ON
+  CLASSITEM "[pixel]"
+  CLASS
+    EXPRESSION ([pixel] < 64)
+    COLOR 0 0 0
+  END
+  CLASS
+    EXPRESSION ([pixel] >= 64 AND [pixel] < 128)
+    COLOR 255 0 0
+  END
+  CLASS
+    EXPRESSION ([pixel] >= 128 AND [pixel] < 196)
+    COLOR 0 255 0
+  END
+  CLASS
+    EXPRESSION ([pixel] >= 196 AND [pixel] < 256)
+    COLOR 0 0 255
+  END
+END

@@ -1,0 +1,10 @@
+[out:json][timeout:125];
+(
+  way["highway"="motorway"](53.0044,10.3481,54.7727,14.6928);>;
+  way["highway"="trunk"](53.0044,10.3481,54.7727,14.6928);>;
+  way["highway"="primary"](53.0044,10.3481,54.7727,14.6928);>;
+  way["highway"="secondary"](53.0044,10.3481,54.7727,14.6928);>;
+  way["highway"="tertiary"](53.0044,10.3481,54.7727,14.6928);>;
+  way["highway"="residential"](53.0044,10.3481,54.7727,14.692);>;
+);
+out geom;

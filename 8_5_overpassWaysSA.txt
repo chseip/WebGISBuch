@@ -1,0 +1,10 @@
+{{geocodeArea:Mecklenburg-Vorpommern}}->.searchArea;
+(
+  way["highway"="motorway"](area.searchArea);>;
+  way["highway"="trunk"](area.searchArea);>;
+  way["highway"="primary"](area.searchArea);>;
+  way["highway"="secondary"](area.searchArea);>;
+  way["highway"="tertiary"](area.searchArea);>;
+  way["highway"="residential"](area.searchArea);>;
+);
+out;

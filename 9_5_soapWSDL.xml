@@ -1,0 +1,17 @@
+<definitions targetNamespace="http://artikel.demo/" name="PreisImplService"> 
+	<types>
+		...
+	</types> 
+	<messagename="getPreis"> 
+		<part name="parameters" element="tns:getPreis" /> 
+	</message> 
+	<messagename="getPreisResponse"> 
+		<part name="parameters" element="tns:getPreisResponse" /> 
+	</message> 
+	<portTypename="Preis"> 
+		<operation name="getPreis"> 
+			<input ... message="tns:getPreis" /> 
+			<output ... message="tns:getPreisResponse" /> 
+		</operation> 
+	</portType>
+</definitions>

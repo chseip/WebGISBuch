@@ -1,0 +1,8 @@
+<Filter> 
+  <BBOX> 
+    <PropertyName>Geometry</PropertyName> 
+    <gml:Box srsName="http://www.opengis.net/gml/srs/epsg.xml#4326"> 
+      <gml:coordinates>13.0983,31.5899 35.5472,42.8143</gml:coordinates> 
+    </gml:Box> 
+  </BBOX>
+</Filter>

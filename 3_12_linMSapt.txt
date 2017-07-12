@@ -1,0 +1,3 @@
+apt-get install libapache2-mod-mapcache apache2 apache2-utils cgi-mapserver
+a2enmod cgi
+service apache2 restart #ODER: /etc/init.d/apache2 restart

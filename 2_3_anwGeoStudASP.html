@@ -1,0 +1,17 @@
+<%@ Language=VBScript %>
+<%  Set mConnector =?
+  Server.CreateObject("aims.ArcIMSConnector")
+  mConnector.ServerName="localhost"
+  mConnector.ServerPort=5300  
+  Set mMap = Server.CreateObject("aims.Map")
+  resultInit = mMap.InitMap(mConnector, "gi_ausbildung")
+  mMap.Width =600
+  mMap.Height=400
+  mMap.Refresh
+  mapurl = mMap.GetImageAsUrl()
+%>
+<html>
+  <body>
+  <img type="image" name="map" src="<%=mapurl%>"/>
+  </body>
+</html>

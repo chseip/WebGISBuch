@@ -1,0 +1,5 @@
+<symbol id="mySymbol">
+  <rect x="-30" y="-20" width="60" height="40" fill="red"/>
+  <circle cx="0" cy="0" r="2" fill="lime">
+</symbol>
+<use xlink:href="#mySymbol" x="200" y="400"/>

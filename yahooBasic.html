@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Map with valid credentials</title>
+     <script type="text/javascript" src="http://api.maps.yahoo.com/ajaxymap?v=3.8&appid=yourkeyhere"></script>
+    <script type="text/javascript">
+    var map = null;
+    function createMap() {
+        var map = new Ymap(document.getElementById('myMap'));
+        map.drawZoomAndCenter(new YGeoPoint(37.7740486,-122.4101883), 3);
+      }
+    </script>
+  </head>
+  <body onload="createMap();">
+    <div id='myMap' style="position:relative; width:600px; height:300px;"></div>
+  </body>
+</html>

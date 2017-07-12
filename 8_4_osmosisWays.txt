@@ -1,0 +1,5 @@
+osmosis --read-xml file="<<Path to>>mecklenburgvorpommern.osm"
+	--tf accept-ways highway=*
+	--tf reject-ways highway=track,raceway,path,footway,cycleway,bridleway,steps,proposed,construction
+	--used-node
+	--write-xml file="<<Path to output>>mv_reject.osm"

@@ -1,0 +1,3 @@
+> ogr2ogr -f "GML" rivers.gml daten/rivers.shp rivers
+
+> ogr2ogr -f "PostgreSQL" "PG:dbname=mydb host=myhost.de user=pguser" data/staedte.shp -where "einwohner > 10000"

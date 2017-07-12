@@ -1,0 +1,16 @@
+<Request>
+  <GetCapabilities/>
+  <DescribeCoverage/>
+  <GetCoverage/>
+</Request> 
+<Contents>
+  <CoverageSummary>
+    <ows:Title>TBD</ows:Title>
+    <ows:Abstract>TBD</ows:Abstract>
+    <ows:WGS84BoundingBox> 
+      <ows:LowerCorner>-180 -90</ows:LowerCorner>
+      <ows:UpperCorner>180 90</ows:UpperCorner>
+    </ows:WGS84BoundingBox>
+    <Identifier>TBD</Identifier>
+  </CoverageSummary>
+</Contents> 

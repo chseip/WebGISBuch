@@ -1,0 +1,18 @@
+﻿<html>
+  <head>
+    <title>OpenMapTiles OSM Bright style</title>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.29.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.29.0/mapbox-gl.css' rel='stylesheet' />
+  </head>
+  <body>
+    <div id='map' style="width: 600px; height: 300px"></div>
+    <script>
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'https://openmaptiles.github.io/osm-bright-gl-style/style-cdn.json',
+        center: [12.108811, 54.083336],
+        zoom: 11
+      });
+    </script>
+  </body>
+</html>

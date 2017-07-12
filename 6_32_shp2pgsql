@@ -1,0 +1,2 @@
+> shp2pgsql seen seentabelle > seen.sql
+> psql -U user -d seendb -f seen.sql

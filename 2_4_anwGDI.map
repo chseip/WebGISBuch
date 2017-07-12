@@ -1,0 +1,8 @@
+WEB
+  METADATA
+  "wms_title" "\gls{wms} Demo Server"
+  "wms_onlineresource" "http://my.host.com/cgi-bin/
+  mapserv?map=wms.map&"
+  "wms_srs" "EPSG:31468 EPSG:4326"
+  END
+END

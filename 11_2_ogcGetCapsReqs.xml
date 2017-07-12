@@ -1,0 +1,14 @@
+<Capability>
+  <Request>
+    <GetCapabilities/>
+    <GetMap/>
+    <GetFeatureInfo/>
+    <DescribeLayer/>
+    <GetLegendGraphic/>
+    <GetStyles/>
+  </Request> 
+  <Exception/>
+  <VendorSpecificCapabilities/>
+  <UserDefinedSymbolization SupportSLD="1"/>
+  <Layer/>
+</Capability>

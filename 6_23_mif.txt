@@ -1,0 +1,20 @@
+Version 450
+Charset "WindowsLatin1"
+Delimiter ","
+CoordSys Earth Projection 8, 1000, "m", 9, 0, 1, 3500000, 0 
+	 Bounds (-4748143.32561, -10000855.7646) (11748143.3256, 10000855.7646)
+Columns 6
+	Leitungsart Char(9)
+	Druckbereich Char(2)
+	Nennweite Integer
+	Material Char(10)
+	Nenndruck Integer
+	Baujahr Integer
+
+DATA 
+Line 3459037.23 5432768.27 3459038.05 5432775.17
+Pline 4
+      3459034.93 5432750.01
+      3459033.63 5432738.08
+      3459009.86 5432710.54
+      3459000.04 5432632.9

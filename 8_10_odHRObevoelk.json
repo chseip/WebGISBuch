@@ -1,0 +1,28 @@
+[
+  {
+    "anteil_3_6": "1.4",
+    "anzahl_6_15": "376",
+    "anzahl_3_6": "114",
+    "anteil_6_15": "4.8",
+    "anzahl_juenger_3": "111",
+    "anzahl_65_75": "1670",
+    "anzahl_55_65": "1423",
+    "anzahl_45_55": "1179",
+    "anzahl_35_45": "775",
+    "anzahl_25_35": "636",
+    "durchschnittsalter": "53.8",
+    "anzahl_15_25": "404",
+    "anteil_juenger_3": "1.4",
+    "stadtbereich": "Warnemuende",
+    "anzahl_75_aelter": "1224",
+    "anteil_65_75": "21.1",
+    "jugendquotient": "18.0",
+    "altenquotient": "68.0",
+    "anteil_55_65": "18.0",
+    "anteil_45_55": "14.9",
+    "anteil_35_45": "9.8",
+    "anteil_25_35": "8.0",
+    "anteil_15_25": "5.1",
+    "anteil_75_aelter": "15.5"
+  }
+]

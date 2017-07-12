@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+  <channel>
+    <item>
+      <title>Beispiel</title>
+      <link>http://www.geoinformatik.uni-rostock.de/</link>
+      <description>Neuerungen</description>
+      <geo:lat>12.3323</geo:lat>
+      <geo:long>54.3289</geo:long>
+    </item>
+  </channel>
+</rss>

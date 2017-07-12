@@ -1,0 +1,10 @@
+<way id="43157302" visible="true" timestamp="2009-10-26T10:45:09Z" version="1" changeset="2954960" user="Ed Avis" uid="31257">
+  <nd ref="540653724"/>
+  <nd ref="25507043"/>
+  <nd ref="107762"/>
+  <nd ref="25507038"/>
+  <nd ref="107759"/>
+  <tag k="highway" v="primary"/>
+  <tag k="lcn_ref" v="6a"/>
+  <tag k="name" v="Parliament Street"/>
+</way>

@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="http://openlayers.org/en/v3.14.0/css/ol.css" type="text/css">
+    <!--<script src="http://openlayers.org/en/v3.14.0/build/ol.js"/>-->
+    <script src="http://api.tiles.mapbox.com/mapbox.js/plugins/turf/v2.0.0/turf.min.js"></script>
+	<script src="http://openlayers.org/en/v3.14.0/build/ol.js"/>
+    <title>Turf and OpenLayers 3 - inside()xxxx</title>
+  </head>
+  <body>
+	Hallo
+    <div id="map" class="map">Karte</div>
+    <script type="text/javascript">
+      var coordinates = [[[11.456747,53.516422],[11.350268545948, 53.525946819141],[11.302409,53.530228],[11.300674, 53.53177],[11.300873910132,53.579389178157],[11.301221, 53.662067],[11.301862,53.662178],[11.305145,53.662407], [11.34855,53.66515],[11.360609,53.66568],[11.367164, 53.665802],[11.405409,53.652054],[11.425345,53.643635], [11.505655,53.60043],[11.512019,53.5927], [11.460756,53.519318],[11.456747,53.516422]]];
+      var polygon = turf.polygon(coordinates);
+	  
+      var format = new ol.format.GeoJSON();
+      var features = format.readFeatures(polygon, {featureProjection: "EPSG:3857"});
+      var vectorSource = new ol.source.Vector({features: features});
+      var vectorLayer = new ol.layer.Vector({
+        source: vectorSource,
+        style: [
+          new ol.style.Style({
+            stroke: new ol.style.Stroke({
+              color: [0, 121, 88, 1],
+              width: 2
+            })
+          })
+        ]
+      });
+
+      var pt1 = turf.point([11.302409, 53.530228]);
+      var pt2 = turf.point([11.456747, 53.516422]);
+      var pt3 = turf.point([11.2, 53.5]);
+      var pt4 = turf.point([11.4, 53.6]);
+      
+      console.log("isInside1 " + turf.inside(pt1, polygon) + JSON.stringify(pt1));
+      console.log("isInside2 " + turf.inside(pt2, polygon) + JSON.stringify(pt2));
+      console.log("isInside3 " + turf.inside(pt3, polygon) + JSON.stringify(pt3));
+      console.log("isInside4 " + turf.inside(pt4, polygon) + JSON.stringify(pt4));
+
+      var PTfeatures = {
+        "type": "FeatureCollection",
+        "features": [pt1, pt2, pt3, pt4]
+      };
+      var ptfeaturesOL = format.readFeatures(PTfeatures, {featureProjection: "EPSG:3857"});
+      var PTvectorSource = new ol.source.Vector({features: ptfeaturesOL});
+      var PTvectorLayer = new ol.layer.Vector({source: PTvectorSource});
+      
+      var rasterLayer = new ol.layer.Tile({source: new ol.source.OSM()});
+      
+      var map = new ol.Map({
+        layers: [rasterLayer, vectorLayer, PTvectorLayer],
+        target: document.getElementById("map"),
+        view: new ol.View({
+          center: ol.proj.fromLonLat([11.5, 53.4]),
+          zoom: 10
+        })
+      });
+    </script>
+  </body>
+</html>

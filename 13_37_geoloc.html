@@ -1,0 +1,21 @@
+<html>
+  <body>
+    <p>Zur Positionsbestimmung Button klicken.</p>
+    <button onclick="getLocation()">Klick mich</button>
+    <p id="demo"/>
+    <script>
+      var x = document.getElementById("demo");
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else { 
+          x.innerHTML = "Geolocation wird von diesem Browser nicht unterst&uuml;tzt.";
+        }
+      }
+      function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude;
+      }
+    </script>
+  </body>
+</html>

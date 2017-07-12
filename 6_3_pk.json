@@ -1,0 +1,24 @@
+﻿{  
+  "vorname": "Peter",
+  "nachname": "Korduan",
+  "isAlive": true,
+  "alter": 50,
+  "addresse": {
+    "strasse": "Joachim-Jungius-Straße",
+    "stadt": "Rostock",
+    "staat": "MV",
+    "plz": 18059
+  },
+  "telNummern": [
+    {
+      "typ": "home",
+      "nummer": "0381 / 123 456 78"
+    },
+    {
+      "typ": "office", 
+      "nummer": "0381 / 4034444 4"
+    }
+  ],
+  "kinder": [],
+  "partner": null
+}

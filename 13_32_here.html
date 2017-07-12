@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.css" />
+    <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-core.js"/>
+    <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-service.js"/>
+    <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-ui.js"/>
+    <script type="text/javascript" src="https://js.cit.api.here.com/v3/3.0/mapsjs-mapevents.js"/>
+  </head>
+  <body>
+    <div id="map" style="width: 600px; height: 300px"/>
+    <script  type="text/javascript">
+      //Step 1: initialisiere Kommunikation mit der Plattform
+      var platform = new H.service.Platform({
+        app_id: 'DemoAppId01082013GAL',
+        app_code: 'AJKnXv84fjrb0KIHawS0Tg',
+        useCIT: true,
+        useHTTPS: true
+      });
+      var defaultLayers = platform.createDefaultLayers();
+      //Step 2: initialisiere die Karte
+      var map = new H.Map(document.getElementById('map'), defaultLayers.normal.map);
+      //Step 3: mache die Karte interaktiv
+      var behavior = new H.mapevents.Behavior(new H.mapevents.MapEvents(map));
+      // Erzeuge Steuerelemente
+      var ui = H.ui.UI.createDefault(map, defaultLayers);
+      // Bestimmte Kartenausschnitt und Zoomstufe
+      map.setCenter({lat:54.0784, lng:12.1207});
+      map.setZoom(14);
+    </script>
+  </body>
+</html>

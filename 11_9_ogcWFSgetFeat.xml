@@ -1,0 +1,17 @@
+<GetFeature version="1.1.0" service="WFS" handle="Query01" xmlns="http://www.opengis.net/wfs" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" xmlns:myns="http://www.someserver.com/myns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wfs/1.1.0/WFS.xsd">
+  <Query typeNames="myns:Hydrography">
+    <wfs:PropertyName>myns:geoTemp</PropertyName>
+    <wfs:PropertyName>myns:depth</PropertyName>
+    <ogc:Filter>
+      <ogc:Not>
+        <ogc:Disjoint>
+          <ogc:PropertyName>myns:geoTemp</ogc:PropertyName>
+          <gml:Envelope srsName="EPSG:63266405">
+            <gml:lowerCorner>-57.9118 46.2023</gml:lowerCorner>
+            <gml:upperCorner>-46.6873 51.8145</gml:upperCorner>
+          </gml:Envelope>
+        </ogc:Disjoint>
+      </ogc:Not>
+    </ogc:Filter>
+  </Query>
+</GetFeature>

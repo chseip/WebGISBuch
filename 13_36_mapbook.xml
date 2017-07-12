@@ -1,0 +1,20 @@
+<mapbook version="2.8.0">
+  <map-source name="Survey" type="mapserver">
+    <file>./mydata/survey/survey.map</file>
+    <layer name="Townships" reference="false"/>
+    <param name="TRANSPARENT" value="true"/>
+  </map-source>
+  <group title="My Layers" expand="true">
+    <layer title="Townships" src="Survey/Townships" status="off" legend="false" show-legend="false"/>
+  </group>
+  <param name="projection">EPSG:3857</param>
+  <param name="max_extent">189783.560000,4816309.330000,761653.524114,5472346.500000</param>
+  <param name="initial_extent">497205.409367,4923984.423582,477595.805945,4941970.52988</param>
+  <drawer>
+    <tool name="draw_polygon" title="Draw Polygon" type="internal" action="draw_polygon"/>
+    <tool name="draw_line" title="Draw Line" type="internal" action="draw_line"/>
+    <tool name="draw_point" title="Draw Point" type="internal" action="draw_point"/>
+    <tool name="draw_remove" title="Remove Drawing" type="internal" action="draw_remove"/>
+    <tool name="draw_edit" title="Edit Drawing" type="internal" action="draw_edit"/>
+  </drawer>
+</mapbook>

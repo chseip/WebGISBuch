@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<rdf:RDF
+  xmlns:rdf="http://www.gdi-service.de/rdf/syntax#"
+  xmlns:contact="http://www.gdi-service.de/Kontakt">
+  <contact:Person rdf:about="http://www.gdi-service.de/node/47">
+    <contact:fullName>Peter Korduan</contact:fullName>
+    <contact:mailbox rdf:resource="peter.korduan@gdi-service.de"/>
+    <contact:personalTitle>Dr.-Ing.</contact:personalTitle> 
+  </contact:Person>
+</rdf:RDF>

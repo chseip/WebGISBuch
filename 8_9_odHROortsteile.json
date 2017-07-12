@@ -1,0 +1,23 @@
+{
+  "type": "FeatureCollection",
+  "features": [{
+    "type": "Feature",
+    "properties": {
+      "uuid": "067449b6-...-0050569b7e95",
+      "kreis_name": "Rostock",
+      "kreis_schluessel": "13003",
+      "gemeindeverband_name": "Rostock, Hansestadt",
+      "gemeindeverband_schluessel": "130030000",
+      "gemeinde_name": "Rostock, Hansestadt",
+      "gemeinde_schluessel": "130030000000",
+      "gemeindeteil_name": "Torfbruecke",
+      "gemeindeteil_schluessel": "0007",
+      "abkuerzung": "Tbr"
+    },
+    "geometry": {
+      "type": "MultiPolygon",
+      "coordinates": [[[[12.178075941184778,
+      54.230932653929379]]]]
+    }
+  }]
+}

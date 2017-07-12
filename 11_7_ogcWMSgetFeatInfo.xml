@@ -1,0 +1,13 @@
+<GetFeatureInfo>
+  <Format>text/plain</Format>
+  <Format>text/html</Format>
+  <Format>application/vnd.ogc.gml</Format>
+  <DCPType>
+    <HTTP>
+      <Get>
+        <OnlineResource xlink:href="http://localhost/workshop/index.html"/>
+      </Get>
+      <Post/>
+    </HTTP>
+  </DCPType>
+</GetFeatureInfo>

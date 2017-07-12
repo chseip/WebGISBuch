@@ -1,0 +1,15 @@
+<fes:Filter>
+  <fes:And>
+    <fes:Function name="ClassifiedAs">
+      <fes:Literal>RoadTaxonomy</fes:Literal>
+      <fes:Literal>Major Highway</fes:Literal>
+    </fes:Function>
+    <fes:BBOX>
+      <fes:ValueReference>/RS1/geometry</fes:ValueReference>
+      <gml:Envelope srsName=" http://www.opengis.net/def/crs/epsg/0/1234">
+        <gml:lowerCorner>10 10</gml:lowerCorner>
+        <gml:upperCorner>20 20</gml:upperCorner>
+      </gml:Envelope>
+    </fes:BBOX>
+  </fes:And>
+</fes:Filter>

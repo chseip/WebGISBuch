@@ -1,0 +1,11 @@
+<xs:complexType name="DQ_DataQuality_Type"> 
+  <xs:complexContent> 
+    <xs:extension base="gco:AbstractObject_Type"> 
+      <xs:sequence> 
+        <xs:element name="scope" type="gmd:DQ_Scope_PropertyType"/> 
+        <xs:element name="lineage" type="gmd:LI_Lineage_PropertyType" minOccurs="0"/> 
+        <xs:element name="report" type="gmd:_DQ_Element_PropertyType" minOccurs="0" maxOccurs="unbounded"/> 
+      </xs:sequence> 
+    </xs:extension> 
+  </xs:complexContent> 
+</xs:complexType>

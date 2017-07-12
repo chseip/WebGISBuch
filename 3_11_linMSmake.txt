@@ -1,0 +1,2 @@
+./configure --enable-force-cgi-redirect -with-regex=system --with-config-file-path=/etc/php4/cgi --with-zlib --with-xml=/usr --with-freetype-dir=/usr/lib --with-jpeg-dir=/usr/lib --withpng-dir=/usr/lib --with-tiff-dir=/usr/lib --with-pgsql --with-openssl=/usr --enable-dbase --with-gd -with-php=/usr/local/php
+make

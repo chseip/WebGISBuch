@@ -1,0 +1,24 @@
+<application xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://wadl.dev.java.net/2009/02wadl.xsd"> 
+  <resources base="http://api.search.yahoo.com/NewsSearchService/V1/"> 
+    <resource path="newsSearch"> 
+      <method name="GET" id="search"> 
+        <request> 
+          <param name="appid" type="xsd:string" style="query" required="true"/> 
+          <param name="query" type="xsd:string" style="query" required="true"/> 
+          <param name="results" style="query" type="xsd:int" default="10"/> 
+          <param name="sort" style="query" default="rank"> 
+            <option value="rank"/> 
+            <option value="date"/> 
+          </param> 
+          <param name="language" style="query" type="xsd:string"/> 
+        </request> 
+        <response status="200"> 
+          <representation mediaType="application/xml" element="yn:ResultSet"/> 
+        </response> 
+        <response status="400"> 
+          <representation mediaType="application/xml" element="ya:Error"/> 
+        </response> 
+      </method> 
+    </resource> 
+  </resources>
+</application>
